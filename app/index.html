@@ -18,7 +18,12 @@
   Name: <input ng-model="name">
   <hr>
 
-  <div demo-greet="name"></div>
+  <ul>
+    <li ng-repeat="i in [1, 2, 3]">
+      <div demo-greet="name"></div>
+      <tt>leak={{leak}}</tt>
+    </li>
+  </ul>
 
   <hr>
   <pre>name={{name}}
