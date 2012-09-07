@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Testacular" type="NodeJSConfigurationType" factoryName="Node JS" path-to-node="/usr/local/bin/node" path-to-js-file="../../../../../usr/local/bin/testacular" application-parameters="testacular.conf.js --no-auto-watch --no-colors --browsers ChromeCanary --reporter dots" working-dir="$PROJECT_DIR$" coffeescript-run="false">
+    <RunnerSettings RunnerId="NodeJS.run" />
+    <ConfigurationWrapper RunnerId="NodeJS.run" />
+    <method />
+  </configuration>
+</component>
