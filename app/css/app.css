@@ -5,3 +5,35 @@ h1, h2, h3, h4 {
 body {
   padding: .5em 1em;
 }
+
+.header {
+  text-align: right;
+}
+
+div[ng-repeat] {
+  display: inline-block;
+}
+
+.profile > img {
+  width: 80px;
+  height: 80px;
+}
+
+.profile {
+  margin: 3px;
+  width: 120px;
+  height: 120px;
+  display: inline-block;
+  border: 1px solid black;
+  -webkit-border-radius: 3px;
+  padding: 5px;
+  text-align: center;
+  overflow: hidden;
+  background-color: #EEE;
+}
+
+.profile>h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+}

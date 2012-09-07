@@ -15,15 +15,25 @@
   <script src="js/bootstrap.js"></script>
 </head>
 <body ng-controller="Demo">
-  Name: <input ng-model="name">
-  <hr>
+  <div class="header">
+    <h1>I am</h1>
+    <div class="profile">
+      <img ng-src="{{email|gravatar}}">
+      <h1>{{email}}</h1>
+    </div>
+  </div>
 
-  <ul>
-    <li ng-repeat="i in [1, 2, 3]">
-      <div demo-greet="name"></div>
-      <tt>leak={{leak}}</tt>
-    </li>
-  </ul>
+  <hr/>
+
+  <div>
+    <h1>AngularJS Developers</h1>
+    <div ng-repeat="email in devs">
+      <div class="profile">
+        <img ng-src="{{email|gravatar}}">
+        <h1>{{email}}</h1>
+      </div>
+    </div>
+  </div>
 
   <hr>
   <pre>name={{name}}
@@ -32,12 +42,10 @@ leak={{leak}}</pre>
 </html>
 
 <!--
-- Show the controller
-- Show difference between compile and link
-- Explain restrict / Directive invocation
-- Show how directors can leak state
-- Show how scope encapsulates state
-- Show how to watch an expression
-- Show how to change the state
-- Show Dependency Injection
+- Show HTML duplication
+- Show extraction to separate file
+- Explain 'restrict'
+- Show leaking into component
+- Show leaking out of component
+- Show component parameters
 -->
