@@ -16,13 +16,23 @@
 </head>
 <body ng-controller="Demo">
   Name: <input ng-model="name">
+  <hr>
 
-  <div>
-    Hello <span ng-bind="name"></span>
-  </div>
+  <div demo-greet="name"></div>
 
-  <ul>
-    <li ng-repeat="i in [1,2,3]">{{i}}</li>
-  </ul>
+  <hr>
+  <pre>name={{name}}
+leak={{leak}}</pre>
 </body>
 </html>
+
+<!--
+- Show the controller
+- Show difference between compile and link
+- Explain restrict / Directive invocation
+- Show how directors can leak state
+- Show how scope encapsulates state
+- Show how to watch an expression
+- Show how to change the state
+- Show Dependency Injection
+-->
