@@ -2,13 +2,6 @@
 
 myApp.controller('Demo', function($scope) {
   $scope.name = 'world';
+  $scope.greeting = 'Greeting';
   $scope.leak = 'none';
-
-  $scope.email = 'misko@hevery.com';
-
-  $scope.devs = [
-    'misko@hevery.com',
-    'iiminar@gmail.com',
-    'vojta.jina@gmail.com'
-  ];
 });

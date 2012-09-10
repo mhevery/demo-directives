@@ -37,3 +37,28 @@ div[ng-repeat] {
   padding: 0;
   font-size: 11px;
 }
+
+.zippy {
+  border: 1px solid black;
+  display: inline-block;
+  width: 250px;
+}
+.zippy > .body {
+  -webkit-transition: line-height,padding .3s ease;
+  overflow: hidden;
+}
+
+.zippy.opened > .title:before { content: '▼ '; }
+.zippy.opened > .body { line-height: 1em; padding: .25em .25em; }
+
+.zippy.closed > .title:before { content: '► '; }
+.zippy.closed > .body { line-height: 0; padding: 0 .25em;}
+.zippy > .title {
+  background-color: black;
+  color: white;
+  padding: .1em .3em;
+  cursor: pointer;
+}
+.zippy > .body {
+  padding: .1em .3em;
+}

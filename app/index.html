@@ -15,19 +15,12 @@
   <script src="js/bootstrap.js"></script>
 </head>
 <body ng-controller="Demo">
-  <div class="header">
-    <h1>I am</h1>
-    <profile email="email"></profile>
-  </div>
-
+  <input ng-model="greeting">
   <hr/>
 
-  <div>
-    <h1>AngularJS Developers</h1>
-    <div ng-repeat="dev in devs">
-      <profile email="dev"></profile>
-    </div>
-  </div>
+  <zippy title="{{greeting}}">
+    Hello {{name}}!
+  </zippy>
 
   <hr>
   <pre>name={{name}}
@@ -36,10 +29,8 @@ leak={{leak}}</pre>
 </html>
 
 <!--
-- Show HTML duplication
-- Show extraction to separate file
-- Explain 'restrict'
-- Show leaking into component
-- Show leaking out of component
-- Show component parameters
+- Discuss internal state of component and its leaks
+- Show that no trasclusion is happening
+- Enable trasclusion and show in Batarang
+- Discuss scope structure
 -->
