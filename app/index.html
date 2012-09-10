@@ -17,21 +17,15 @@
 <body ng-controller="Demo">
   <div class="header">
     <h1>I am</h1>
-    <div class="profile">
-      <img ng-src="{{email|gravatar}}">
-      <h1>{{email}}</h1>
-    </div>
+    <profile email="email"></profile>
   </div>
 
   <hr/>
 
   <div>
     <h1>AngularJS Developers</h1>
-    <div ng-repeat="email in devs">
-      <div class="profile">
-        <img ng-src="{{email|gravatar}}">
-        <h1>{{email}}</h1>
-      </div>
+    <div ng-repeat="dev in devs">
+      <profile email="dev"></profile>
     </div>
   </div>
 
