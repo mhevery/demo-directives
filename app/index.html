@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="myApp">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Directive Demo</title>
@@ -12,8 +12,17 @@
   <script src="js/controllers.js"></script>
   <script src="js/filters.js"></script>
   <script src="js/directives.js"></script>
+  <script src="js/bootstrap.js"></script>
 </head>
 <body ng-controller="Demo">
+  Name: <input ng-model="name">
 
+  <div>
+    Hello <span ng-bind="name"></span>
+  </div>
+
+  <ul>
+    <li ng-repeat="i in [1,2,3]">{{i}}</li>
+  </ul>
 </body>
 </html>
